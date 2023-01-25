@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-MediumItalic.ttf</string>
+		<string>Roboto-ThinItalic.ttf</string>
+		<string>Roboto-BoldItalic.ttf</string>
+		<string>Roboto-LightItalic.ttf</string>
+		<string>Roboto-Italic.ttf</string>
+		<string>Roboto-BlackItalic.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-Thin.ttf</string>
+		<string>Roboto-Black.ttf</string>
+		<string>Nunito-Medium.ttf</string>
+		<string>Nunito-ExtraBoldItalic.ttf</string>
+		<string>Nunito-ExtraBold.ttf</string>
+		<string>Nunito-ExtraLightItalic.ttf</string>
+		<string>Nunito-Light.ttf</string>
+		<string>Nunito-Regular.ttf</string>
+		<string>Nunito-SemiBold.ttf</string>
+		<string>Nunito-Bold.ttf</string>
+		<string>Nunito-BoldItalic.ttf</string>
+		<string>Nunito-Black.ttf</string>
+		<string>Nunito-ExtraLight.ttf</string>
+		<string>Nunito-SemiBoldItalic.ttf</string>
+		<string>Nunito-BlackItalic.ttf</string>
+		<string>Nunito-Italic.ttf</string>
+		<string>Nunito-LightItalic.ttf</string>
+		<string>Nunito-MediumItalic.ttf</string>
+	</array>
+</dict>
+</plist>
