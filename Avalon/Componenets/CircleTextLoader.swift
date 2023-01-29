@@ -58,6 +58,7 @@ struct CircleTextLoader: View {
             
             Text(text)
                 .font(Font.custom(fontStyle, size: textSize))
+                .foregroundColor(textColor)
                 .scaleEffect(scaleCoefficient)
                 .opacity(textOpacity)
             // TODO: Add tracking/check afterwards

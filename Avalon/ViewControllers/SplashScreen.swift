@@ -34,8 +34,8 @@ private extension SplashScreen {
         static var splashScreenTime = 2.0
         static let text = "AVALON"
         static let fontStyle = "AvenirNext-Heavy"
-        static let circleColor: Color = .crustaOrange
-        static let textColor: Color = .black
+        static let circleColor: Color = .turquoiseBlue
+        static let textColor: Color = .crustaOrange
     }
 }
 
