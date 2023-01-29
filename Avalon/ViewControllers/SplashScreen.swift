@@ -16,19 +16,26 @@ struct SplashScreen: View {
                 GameModeSelection()
             }
         } else {
-            Image("splashScreen")
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + LocalVariables.splashScreenTime) {
-                        self.isActive = true
-                    }
+            CircleTextLoader(text: LocalConsts.text,
+                             fontStyle: LocalConsts.fontStyle,
+                             circleColor: LocalConsts.circleColor,
+                             textColor: LocalConsts.textColor)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + LocalConsts.splashScreenTime) {
+                    self.isActive = true
                 }
+            }
         }
     }
 }
 
 private extension SplashScreen {
-    enum LocalVariables {
+    enum LocalConsts {
         static var splashScreenTime = 2.0
+        static let text = "AVALON"
+        static let fontStyle = "AvenirNext-Heavy"
+        static let circleColor: Color = .crustaOrange
+        static let textColor: Color = .black
     }
 }
 

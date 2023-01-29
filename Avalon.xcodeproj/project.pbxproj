@@ -50,6 +50,9 @@
 		B7A67B52297807950029C49B /* GameModeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A67B51297807950029C49B /* GameModeSelection.swift */; };
 		B7A67B56297821B20029C49B /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A67B55297821B20029C49B /* Navigator.swift */; };
 		B7A67B58297A85480029C49B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A67B57297A85480029C49B /* SplashScreen.swift */; };
+		B7CC1605298421FC009165B7 /* CircleTextLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC1604298421FC009165B7 /* CircleTextLoader.swift */; };
+		B7CC1609298522E3009165B7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC1608298522E3009165B7 /* View+Extensions.swift */; };
+		B7CC160E298544A4009165B7 /* Bool+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC160D298544A4009165B7 /* Bool+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +101,9 @@
 		B7A67B51297807950029C49B /* GameModeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeSelection.swift; sourceTree = "<group>"; };
 		B7A67B55297821B20029C49B /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		B7A67B57297A85480029C49B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		B7CC1604298421FC009165B7 /* CircleTextLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextLoader.swift; sourceTree = "<group>"; };
+		B7CC1608298522E3009165B7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		B7CC160D298544A4009165B7 /* Bool+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,8 @@
 				B70AC0C0293E7CD600B1D50C /* Color+Extensions.swift */,
 				B76CC9422941168D00C45715 /* Font+Extensions.swift */,
 				B76CC970294495C000C45715 /* Binding+Extensions.swift */,
+				B7CC1608298522E3009165B7 /* View+Extensions.swift */,
+				B7CC160D298544A4009165B7 /* Bool+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 			children = (
 				B76CC9402941156900C45715 /* RoundedButton.swift */,
 				B76CC96E29448EF300C45715 /* DescriptionTextField.swift */,
+				B7CC1604298421FC009165B7 /* CircleTextLoader.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -351,8 +360,11 @@
 				B7A67B58297A85480029C49B /* SplashScreen.swift in Sources */,
 				B70AC0C3293E85AD00B1D50C /* Rooms.swift in Sources */,
 				B70AC0C5293E861400B1D50C /* CreateRoom.swift in Sources */,
+				B7CC160E298544A4009165B7 /* Bool+Extensions.swift in Sources */,
+				B7CC1609298522E3009165B7 /* View+Extensions.swift in Sources */,
 				B7A67B52297807950029C49B /* GameModeSelection.swift in Sources */,
 				B70AC0C1293E7CD600B1D50C /* Color+Extensions.swift in Sources */,
+				B7CC1605298421FC009165B7 /* CircleTextLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,11 +497,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Avalon/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,11 +529,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Avalon/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
