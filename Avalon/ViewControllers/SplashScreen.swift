@@ -9,12 +9,20 @@ import SwiftUI
 
 struct SplashScreen: View {
     @State private var isActive = false
+    @State private var gameModeOpacity = 0.0
     
     var body: some View {
         if isActive {
             NavigationView {
                 GameModeSelection()
+                    .opacity(gameModeOpacity)
+                    .onAppear {
+                        withAnimation {
+                            gameModeOpacity = 1.0
+                        }
+                    }
             }
+            .hiddenNavigationBarStyle()
         } else {
             CircleTextLoader(text: LocalConsts.text,
                              fontStyle: LocalConsts.fontStyle,
@@ -22,7 +30,9 @@ struct SplashScreen: View {
                              textColor: LocalConsts.textColor)
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + LocalConsts.splashScreenTime) {
-                    self.isActive = true
+                    withAnimation {
+                        self.isActive = true
+                    }
                 }
             }
         }
