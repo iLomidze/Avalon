@@ -21,3 +21,19 @@ extension View {
         }
     }
 }
+
+extension View {
+    ///  Hides NavigationView var
+    func hiddenNavigationBarStyle() -> some View {
+        modifier( HiddenNavigationBar() )
+    }
+}
+
+/// Used for hiddenNavigationBarStyle - for hiding NavigationView bar
+struct HiddenNavigationBar: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarHidden(true)
+    }
+}

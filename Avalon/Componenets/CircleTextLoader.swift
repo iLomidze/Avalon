@@ -37,7 +37,7 @@ struct CircleTextLoader: View {
         ZStack {
             // Track Circle
             Circle()
-                .stroke(Color.blue.opacity(0.3),
+                .stroke(Color.blue.opacity(0.15),
                         style: StrokeStyle(lineWidth: circleLineWidth))
                 .padding(50)
             
@@ -58,6 +58,7 @@ struct CircleTextLoader: View {
             
             Text(text)
                 .font(Font.custom(fontStyle, size: textSize))
+                .foregroundColor(textColor)
                 .scaleEffect(scaleCoefficient)
                 .opacity(textOpacity)
             // TODO: Add tracking/check afterwards
