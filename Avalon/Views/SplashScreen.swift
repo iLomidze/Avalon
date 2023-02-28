@@ -15,6 +15,7 @@ struct SplashScreen: View {
         if isActive {
             NavigationView {
                 GameModeSelection()
+                    .edgesIgnoringSafeArea([.top, .bottom])
                     .opacity(gameModeOpacity)
                     .onAppear {
                         withAnimation {
