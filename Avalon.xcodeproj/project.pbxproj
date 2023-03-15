@@ -47,11 +47,14 @@
 		B76CC96D29411A4A00C45715 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B76CC95929411A4A00C45715 /* README.txt */; };
 		B76CC96F29448EF300C45715 /* DescriptionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76CC96E29448EF300C45715 /* DescriptionTextField.swift */; };
 		B76CC971294495C000C45715 /* Binding+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76CC970294495C000C45715 /* Binding+Extensions.swift */; };
+		B785B66029BA641900F7355E /* DescTextWithHorizAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B65F29BA641900F7355E /* DescTextWithHorizAction.swift */; };
 		B7A67B52297807950029C49B /* GameModeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A67B51297807950029C49B /* GameModeSelection.swift */; };
 		B7A67B58297A85480029C49B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A67B57297A85480029C49B /* SplashScreen.swift */; };
 		B7CC1605298421FC009165B7 /* CircleTextLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC1604298421FC009165B7 /* CircleTextLoader.swift */; };
 		B7CC1609298522E3009165B7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC1608298522E3009165B7 /* View+Extensions.swift */; };
 		B7CC160E298544A4009165B7 /* Bool+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC160D298544A4009165B7 /* Bool+Extensions.swift */; };
+		B7D1C89A29C24B33004489E8 /* NumberOfPlayersPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C89929C24B33004489E8 /* NumberOfPlayersPicker.swift */; };
+		B7D1C89C29C24F14004489E8 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C89B29C24F14004489E8 /* CircularButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,11 +100,14 @@
 		B76CC95929411A4A00C45715 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B76CC96E29448EF300C45715 /* DescriptionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextField.swift; sourceTree = "<group>"; };
 		B76CC970294495C000C45715 /* Binding+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extensions.swift"; sourceTree = "<group>"; };
+		B785B65F29BA641900F7355E /* DescTextWithHorizAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescTextWithHorizAction.swift; sourceTree = "<group>"; };
 		B7A67B51297807950029C49B /* GameModeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeSelection.swift; sourceTree = "<group>"; };
 		B7A67B57297A85480029C49B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		B7CC1604298421FC009165B7 /* CircleTextLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextLoader.swift; sourceTree = "<group>"; };
 		B7CC1608298522E3009165B7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		B7CC160D298544A4009165B7 /* Bool+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Extensions.swift"; sourceTree = "<group>"; };
+		B7D1C89929C24B33004489E8 /* NumberOfPlayersPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPlayersPicker.swift; sourceTree = "<group>"; };
+		B7D1C89B29C24F14004489E8 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +226,9 @@
 				B76CC9402941156900C45715 /* RoundedButton.swift */,
 				B76CC96E29448EF300C45715 /* DescriptionTextField.swift */,
 				B7CC1604298421FC009165B7 /* CircleTextLoader.swift */,
+				B785B65F29BA641900F7355E /* DescTextWithHorizAction.swift */,
+				B7D1C89929C24B33004489E8 /* NumberOfPlayersPicker.swift */,
+				B7D1C89B29C24F14004489E8 /* CircularButton.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -348,7 +357,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D1C89C29C24F14004489E8 /* CircularButton.swift in Sources */,
 				B76CC9432941168D00C45715 /* Font+Extensions.swift in Sources */,
+				B7D1C89A29C24B33004489E8 /* NumberOfPlayersPicker.swift in Sources */,
 				B76CC971294495C000C45715 /* Binding+Extensions.swift in Sources */,
 				B70AC0B1293E77B300B1D50C /* AvalonApp.swift in Sources */,
 				B76CC9412941156900C45715 /* RoundedButton.swift in Sources */,
@@ -358,6 +369,7 @@
 				B70AC0C5293E861400B1D50C /* CreateRoom.swift in Sources */,
 				B7CC160E298544A4009165B7 /* Bool+Extensions.swift in Sources */,
 				B7CC1609298522E3009165B7 /* View+Extensions.swift in Sources */,
+				B785B66029BA641900F7355E /* DescTextWithHorizAction.swift in Sources */,
 				B7A67B52297807950029C49B /* GameModeSelection.swift in Sources */,
 				B70AC0C1293E7CD600B1D50C /* Color+Extensions.swift in Sources */,
 				B7CC1605298421FC009165B7 /* CircleTextLoader.swift in Sources */,

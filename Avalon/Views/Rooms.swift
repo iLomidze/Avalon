@@ -11,7 +11,24 @@ struct Rooms: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            NumberOfPlayersPicker()
+                .padding(.bottom, 40)
+            DescTextWithHorizAction(text: "Lady Of The Lake", color: .itemsColor)
+                .padding(.bottom, 40)
+            DescTextWithHorizAction(text: "Fast Game Mode", color: .itemsColor)
+            Spacer()
+            RoundedButton(title: "START GAME",
+                          color: .crustaOrange,
+                          width: 175,
+                          height: 50) {
+                print("Start Game pushed")
+            }
+        }
+//            .frame(height: 40.0)
+            .tint(.turquoiseBlue)
+            .padding(.horizontal, 50)
+            .padding(.vertical, 50)
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: Button(action : {
                 self.mode.wrappedValue.dismiss()

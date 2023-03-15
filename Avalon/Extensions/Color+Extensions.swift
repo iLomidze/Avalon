@@ -14,6 +14,7 @@ extension Color {
     static let stormGrey = Color(hex: "#797D83")
     static let whiteSmoke = Color(hex: "#F2F2F2")
     static let navigationIconColor = Color("navigationIconColor")
+    static let itemsColor = Color("itemsColor")
 }
 
 extension Color {
