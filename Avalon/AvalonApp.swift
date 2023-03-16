@@ -13,6 +13,8 @@ struct AvalonApp: App {
         WindowGroup {
             NavigationView {
                 SplashScreen()
+//                 TODO: Remove after debug
+//                WaitingRoom()
             }
         }
     }

@@ -56,6 +56,7 @@
 		B7D1C89A29C24B33004489E8 /* NumberOfPlayersPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C89929C24B33004489E8 /* NumberOfPlayersPicker.swift */; };
 		B7D1C89C29C24F14004489E8 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C89B29C24F14004489E8 /* CircularButton.swift */; };
 		B7D1C8A929C39BA0004489E8 /* WaitingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C8A829C39BA0004489E8 /* WaitingRoom.swift */; };
+		B7D1C8AC29C3C0ED004489E8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C8AB29C3C0ED004489E8 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		B7D1C89929C24B33004489E8 /* NumberOfPlayersPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPlayersPicker.swift; sourceTree = "<group>"; };
 		B7D1C89B29C24F14004489E8 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		B7D1C8A829C39BA0004489E8 /* WaitingRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoom.swift; sourceTree = "<group>"; };
+		B7D1C8AB29C3C0ED004489E8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				B76CC970294495C000C45715 /* Binding+Extensions.swift */,
 				B7CC1608298522E3009165B7 /* View+Extensions.swift */,
 				B7CC160D298544A4009165B7 /* Bool+Extensions.swift */,
+				B7D1C8AB29C3C0ED004489E8 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				B76CC9432941168D00C45715 /* Font+Extensions.swift in Sources */,
 				B7D1C89A29C24B33004489E8 /* NumberOfPlayersPicker.swift in Sources */,
 				B76CC971294495C000C45715 /* Binding+Extensions.swift in Sources */,
+				B7D1C8AC29C3C0ED004489E8 /* String+Extensions.swift in Sources */,
 				B70AC0B1293E77B300B1D50C /* AvalonApp.swift in Sources */,
 				B76CC9412941156900C45715 /* RoundedButton.swift in Sources */,
 				B76CC96F29448EF300C45715 /* DescriptionTextField.swift in Sources */,
