@@ -9,9 +9,14 @@ import SwiftUI
 
 struct Rooms: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @State private var isDestinationSet: Bool? = false
     
     var body: some View {
         VStack {
+            NavigationLink(destination: WaitingRoom(), tag: true, selection: $isDestinationSet) {
+                EmptyView()
+            }
+            
             NumberOfPlayersPicker()
                 .padding(.bottom, 40)
             DescTextWithHorizAction(text: "Lady Of The Lake", color: .itemsColor)
@@ -22,7 +27,7 @@ struct Rooms: View {
                           color: .crustaOrange,
                           width: 175,
                           height: 50) {
-                print("Start Game pushed")
+                isDestinationSet = true
             }
         }
 //            .frame(height: 40.0)
