@@ -12,31 +12,36 @@ struct SplashScreen: View {
     @State private var gameModeOpacity = 0.0
     
     var body: some View {
-        if isActive {
-            NavigationView {
-                GameModeSelection()
-                    .edgesIgnoringSafeArea([.top, .bottom])
-                    .opacity(gameModeOpacity)
-                    .onAppear {
-                        withAnimation {
-                            gameModeOpacity = 1.0
+        ZStack {
+            Color.backgroundColor
+            
+            if isActive {
+                NavigationView {
+                    GameModeSelection()
+                        .edgesIgnoringSafeArea([.top, .bottom])
+                        .opacity(gameModeOpacity)
+                        .onAppear {
+                            withAnimation {
+                                gameModeOpacity = 1.0
+                            }
                         }
-                    }
-            }
-            .hiddenNavigationBarStyle()
-        } else {
-            CircleTextLoader(text: LocalConsts.text,
-                             fontStyle: LocalConsts.fontStyle,
-                             circleColor: LocalConsts.circleColor,
-                             textColor: LocalConsts.textColor)
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + LocalConsts.splashScreenTime) {
-                    withAnimation {
-                        self.isActive = true
+                }
+                .hiddenNavigationBarStyle()
+            } else {
+                CircleTextLoader(text: LocalConsts.text,
+                                 fontStyle: LocalConsts.fontStyle,
+                                 circleColor: LocalConsts.circleColor,
+                                 textColor: LocalConsts.textColor)
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + LocalConsts.splashScreenTime) {
+                        withAnimation {
+                            self.isActive = true
+                        }
                     }
                 }
             }
         }
+        .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 

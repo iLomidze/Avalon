@@ -57,6 +57,7 @@
 		B7D1C89C29C24F14004489E8 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C89B29C24F14004489E8 /* CircularButton.swift */; };
 		B7D1C8A929C39BA0004489E8 /* WaitingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C8A829C39BA0004489E8 /* WaitingRoom.swift */; };
 		B7D1C8AC29C3C0ED004489E8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C8AB29C3C0ED004489E8 /* String+Extensions.swift */; };
+		B7D4940029C7325600DC2321 /* WaitingRoomPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D493FF29C7325600DC2321 /* WaitingRoomPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,7 @@
 		B7D1C89B29C24F14004489E8 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		B7D1C8A829C39BA0004489E8 /* WaitingRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoom.swift; sourceTree = "<group>"; };
 		B7D1C8AB29C3C0ED004489E8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		B7D493FF29C7325600DC2321 /* WaitingRoomPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 				B785B65F29BA641900F7355E /* DescTextWithHorizAction.swift */,
 				B7D1C89929C24B33004489E8 /* NumberOfPlayersPicker.swift */,
 				B7D1C89B29C24F14004489E8 /* CircularButton.swift */,
+				B7D493FF29C7325600DC2321 /* WaitingRoomPlayerView.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				B7D1C8A929C39BA0004489E8 /* WaitingRoom.swift in Sources */,
 				B7A67B52297807950029C49B /* GameModeSelection.swift in Sources */,
 				B70AC0C1293E7CD600B1D50C /* Color+Extensions.swift in Sources */,
+				B7D4940029C7325600DC2321 /* WaitingRoomPlayerView.swift in Sources */,
 				B7CC1605298421FC009165B7 /* CircleTextLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

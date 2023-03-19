@@ -10,6 +10,8 @@ import SwiftUI
 struct WaitingRoom: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
+    @State private var blabla: String = .empty
+    
     private let numbOfColumns = 3
     private let numbOfPlayers = 10
     private var playerNames: [String] = []
@@ -36,16 +38,8 @@ struct WaitingRoom: View {
                             Circle()
                                 .foregroundColor(.backgroundColor)
                         } else {
-                            VStack {
-                                Circle()
-                                    .foregroundColor(.turquoiseBlue)
-                                    .frame(width: 63, height: 63)
-                                    .overlay(Text(getNameInitials(from: item))
-                                    .font(.nunito(type: .bold, size: 20))
-                                    .foregroundColor(.white))
-                                Text(item)
-                                    .font(.nunito(type: .bold, size: 12))
-                                    .foregroundColor(.fontNoteColor)
+                            WaitingRoomPlayerView(playerName: item, iconWidth: 63, iconHeight: 63) {
+                            // TODO: change player name
                             }
                         }
                     }
@@ -62,6 +56,9 @@ struct WaitingRoom: View {
                     // TODO: Add go to next screen action
                 }
                               .padding(.bottom, 55)
+            }
+            .overlay(alignment: .center) {
+                TextField("Enter Player Name", text: $blabla)
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -91,49 +88,6 @@ private extension WaitingRoom {
         if playerNames.count % numbOfColumns == 2 {
             gridItems.insert(.empty, at: numbOfPlayers - 2)
         }
-    }
-    
-    /// Gets Initials From MULTIPLE Words
-    func getNameInitials(from name: String) -> String {
-        let words = name.components(separatedBy: .whitespaces).filter {
-            !$0.isEmpty
-        }
-        if words.count == 0 {
-            return "N/A"
-        } else if words.count == 1 {
-            let word = words.first!
-            return getWordInitials(from: word, size: 2, separator: true)
-        } else {
-            let firstWord = words[0]
-            let secondWord = words[1]
-            return getWordInitials(from: firstWord, separator: true) + getWordInitials(from: secondWord)
-        }
-    }
-    
-    /// Gets Initials From SINGLE Word
-    /// - Parameters:
-    ///   - word: Text for which we want the initials
-    ///   - size: size of the initials (if possible. if not - taking the max possible size)
-    ///   - separator: whether or not add Dot in the end
-    func getWordInitials(from word: String, size: Int = 1, separator: Bool = false) -> String {
-        var initials: String
-        var size = size
-        
-        if size > word.count {
-            size = word.count
-        }
-        
-        if word.count == 1 {
-            initials = word.firstLetter
-        } else {
-            initials = word.substringWith(size: size)
-        }
-        
-        if separator {
-            initials = initials + .dot
-        }
-        
-        return initials
     }
 }
 
