@@ -58,6 +58,12 @@
 		B7D1C8A929C39BA0004489E8 /* WaitingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C8A829C39BA0004489E8 /* WaitingRoom.swift */; };
 		B7D1C8AC29C3C0ED004489E8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C8AB29C3C0ED004489E8 /* String+Extensions.swift */; };
 		B7D4940029C7325600DC2321 /* WaitingRoomPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D493FF29C7325600DC2321 /* WaitingRoomPlayerView.swift */; };
+		B7D4940229C7975300DC2321 /* TextFieldPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4940129C7975300DC2321 /* TextFieldPopUp.swift */; };
+		B7D4940429C7A09F00DC2321 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4940329C7A09F00DC2321 /* Optional+Extensions.swift */; };
+		B7D4940629C7A3D700DC2321 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4940529C7A3D700DC2321 /* UIApplication+Extensions.swift */; };
+		B7D4940829C7AC4F00DC2321 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4940729C7AC4F00DC2321 /* UIViewController+Extensions.swift */; };
+		B7D4942A29CA3C4700DC2321 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4942929CA3C4700DC2321 /* RoundedCorner.swift */; };
+		B7D4942C29CA529200DC2321 /* UIKItManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4942B29CA529200DC2321 /* UIKItManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +120,12 @@
 		B7D1C8A829C39BA0004489E8 /* WaitingRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoom.swift; sourceTree = "<group>"; };
 		B7D1C8AB29C3C0ED004489E8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B7D493FF29C7325600DC2321 /* WaitingRoomPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomPlayerView.swift; sourceTree = "<group>"; };
+		B7D4940129C7975300DC2321 /* TextFieldPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPopUp.swift; sourceTree = "<group>"; };
+		B7D4940329C7A09F00DC2321 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		B7D4940529C7A3D700DC2321 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		B7D4940729C7AC4F00DC2321 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		B7D4942929CA3C4700DC2321 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		B7D4942B29CA529200DC2321 /* UIKItManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKItManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +163,7 @@
 				B70AC0BE293E782E00B1D50C /* Views */,
 				B70AC0BF293E7C9700B1D50C /* Extensions */,
 				B76CC93F2941148600C45715 /* Componenets */,
+				B7D4942629CA29D000DC2321 /* Managers */,
 				B70AC0C6293F24FB00B1D50C /* Resources */,
 				B70AC0B4293E77B500B1D50C /* Assets.xcassets */,
 				B70AC0B6293E77B500B1D50C /* Preview Content */,
@@ -187,6 +200,9 @@
 				B7CC1608298522E3009165B7 /* View+Extensions.swift */,
 				B7CC160D298544A4009165B7 /* Bool+Extensions.swift */,
 				B7D1C8AB29C3C0ED004489E8 /* String+Extensions.swift */,
+				B7D4940329C7A09F00DC2321 /* Optional+Extensions.swift */,
+				B7D4940529C7A3D700DC2321 /* UIApplication+Extensions.swift */,
+				B7D4940729C7AC4F00DC2321 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -238,6 +254,8 @@
 				B7D1C89929C24B33004489E8 /* NumberOfPlayersPicker.swift */,
 				B7D1C89B29C24F14004489E8 /* CircularButton.swift */,
 				B7D493FF29C7325600DC2321 /* WaitingRoomPlayerView.swift */,
+				B7D4940129C7975300DC2321 /* TextFieldPopUp.swift */,
+				B7D4942929CA3C4700DC2321 /* RoundedCorner.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -264,6 +282,14 @@
 				B76CC95929411A4A00C45715 /* README.txt */,
 			);
 			path = Nunito;
+			sourceTree = "<group>";
+		};
+		B7D4942629CA29D000DC2321 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B7D4942B29CA529200DC2321 /* UIKItManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D4942A29CA3C4700DC2321 /* RoundedCorner.swift in Sources */,
+				B7D4940829C7AC4F00DC2321 /* UIViewController+Extensions.swift in Sources */,
+				B7D4940629C7A3D700DC2321 /* UIApplication+Extensions.swift in Sources */,
 				B7D1C89C29C24F14004489E8 /* CircularButton.swift in Sources */,
 				B76CC9432941168D00C45715 /* Font+Extensions.swift in Sources */,
 				B7D1C89A29C24B33004489E8 /* NumberOfPlayersPicker.swift in Sources */,
@@ -374,6 +403,7 @@
 				B70AC0B1293E77B300B1D50C /* AvalonApp.swift in Sources */,
 				B76CC9412941156900C45715 /* RoundedButton.swift in Sources */,
 				B76CC96F29448EF300C45715 /* DescriptionTextField.swift in Sources */,
+				B7D4940229C7975300DC2321 /* TextFieldPopUp.swift in Sources */,
 				B7A67B58297A85480029C49B /* SplashScreen.swift in Sources */,
 				B70AC0C3293E85AD00B1D50C /* Rooms.swift in Sources */,
 				B70AC0C5293E861400B1D50C /* CreateRoom.swift in Sources */,
@@ -381,7 +411,9 @@
 				B7CC1609298522E3009165B7 /* View+Extensions.swift in Sources */,
 				B785B66029BA641900F7355E /* DescTextWithHorizAction.swift in Sources */,
 				B7D1C8A929C39BA0004489E8 /* WaitingRoom.swift in Sources */,
+				B7D4940429C7A09F00DC2321 /* Optional+Extensions.swift in Sources */,
 				B7A67B52297807950029C49B /* GameModeSelection.swift in Sources */,
+				B7D4942C29CA529200DC2321 /* UIKItManager.swift in Sources */,
 				B70AC0C1293E7CD600B1D50C /* Color+Extensions.swift in Sources */,
 				B7D4940029C7325600DC2321 /* WaitingRoomPlayerView.swift in Sources */,
 				B7CC1605298421FC009165B7 /* CircleTextLoader.swift in Sources */,

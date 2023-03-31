@@ -9,14 +9,16 @@ import SwiftUI
 
 extension Color {
     static let backgroundColor = Color("backgroundColor")
-    static let crustaOrange = Color(hex: "#F77B55")
+    static let crustaOrange = Color(hex: "F77B55")
     static let turquoiseBlue = Color(hex: "92DEEB")
-    static let stormGrey = Color(hex: "#797D83")
-    static let whiteSmoke = Color(hex: "#F2F2F2")
+    static let stormGrey = Color(hex: "797D83")
+    static let brightGrey = Color(hex: "50555C")
+    static let whiteSmoke = Color(hex: "F2F2F2")
     static let navigationIconColor = Color("navigationIconColor")
     static let itemsColor = Color("itemsColor")
     static let fontColor = Color("fontColor")
     static let fontNoteColor = Color("fontNoteColor")
+    static let fontNavigationColor = Color("fontNavigationColor")
 }
 
 extension Color {

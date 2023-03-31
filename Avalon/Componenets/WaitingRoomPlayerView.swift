@@ -9,10 +9,11 @@ import SwiftUI
 
 struct WaitingRoomPlayerView: View {
     // MARK: - Properties
-    let playerName: String
+    @State var playerName: String
+    var tag: Int? = nil
     var iconWidth: CGFloat = 44
     var iconHeight: CGFloat = 44
-    var action: () -> Void
+    var action: (Self) -> Void
     
     var body: some View {
         VStack(spacing: 0) {
@@ -27,8 +28,15 @@ struct WaitingRoomPlayerView: View {
                 .foregroundColor(.fontNoteColor)
         }
         .onTapGesture {
-            action()
+            action(self)
         }
+    }
+}
+
+// MARK: Public API
+extension WaitingRoomPlayerView {
+    mutating func setPlayerName(to name: String) {
+        self.playerName = name
     }
 }
 
@@ -74,14 +82,14 @@ private extension WaitingRoomPlayerView {
             initials = initials + .dot
         }
         
-        return initials
+        return initials.uppercased()
     }
 }
 
 // MARK: - Preview
 struct WaitingRoomPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        WaitingRoomPlayerView(playerName: "Player 1") {
+        WaitingRoomPlayerView(playerName: "Player 1") { _ in 
             print("Tapped inside")
         }
     }
