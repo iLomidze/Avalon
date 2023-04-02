@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WaitingRoom: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @State private var destination: Bool? = false
     
     @State private var showAlert: Bool = false
     @State private var selectedPlayer: WaitingRoomPlayerView? = nil
@@ -26,6 +27,10 @@ struct WaitingRoom: View {
     var body: some View {
         ZStack {
             Color.backgroundColor
+            
+            NavigationLink(destination: RoleView(), tag: true, selection: $destination) {
+                EmptyView()
+            }
             
             VStack {
                 Text("Players")
@@ -59,7 +64,7 @@ struct WaitingRoom: View {
                               color: .crustaOrange,
                               width: 175,
                               height: 50) {
-                    // TODO: Add go to next screen action
+                    destination = true
                 }
                               .padding(.bottom, 55)
             }

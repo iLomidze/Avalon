@@ -26,6 +26,7 @@
 		B70AC0E1293F253200B1D50C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B70AC0D4293F253200B1D50C /* Roboto-Bold.ttf */; };
 		B70AC0E2293F253200B1D50C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B70AC0D5293F253200B1D50C /* Roboto-Thin.ttf */; };
 		B70AC0E3293F253200B1D50C /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B70AC0D6293F253200B1D50C /* Roboto-Black.ttf */; };
+		B75229BD29D71D1C000D6439 /* RoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75229BC29D71D1C000D6439 /* RoleView.swift */; };
 		B76CC9412941156900C45715 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76CC9402941156900C45715 /* RoundedButton.swift */; };
 		B76CC9432941168D00C45715 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76CC9422941168D00C45715 /* Font+Extensions.swift */; };
 		B76CC95B29411A4A00C45715 /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B76CC94729411A4A00C45715 /* Nunito-Medium.ttf */; };
@@ -88,6 +89,7 @@
 		B70AC0D5293F253200B1D50C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		B70AC0D6293F253200B1D50C /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		B70AC0E4293F273400B1D50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B75229BC29D71D1C000D6439 /* RoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
 		B76CC9402941156900C45715 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		B76CC9422941168D00C45715 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		B76CC94729411A4A00C45715 /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				B7A67B51297807950029C49B /* GameModeSelection.swift */,
 				B7A67B57297A85480029C49B /* SplashScreen.swift */,
 				B7D1C8A829C39BA0004489E8 /* WaitingRoom.swift */,
+				B75229BC29D71D1C000D6439 /* RoleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75229BD29D71D1C000D6439 /* RoleView.swift in Sources */,
 				B7D4942A29CA3C4700DC2321 /* RoundedCorner.swift in Sources */,
 				B7D4940829C7AC4F00DC2321 /* UIViewController+Extensions.swift in Sources */,
 				B7D4940629C7A3D700DC2321 /* UIApplication+Extensions.swift in Sources */,
