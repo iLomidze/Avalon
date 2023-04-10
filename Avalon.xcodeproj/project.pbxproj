@@ -65,6 +65,7 @@
 		B7D4940829C7AC4F00DC2321 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4940729C7AC4F00DC2321 /* UIViewController+Extensions.swift */; };
 		B7D4942A29CA3C4700DC2321 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4942929CA3C4700DC2321 /* RoundedCorner.swift */; };
 		B7D4942C29CA529200DC2321 /* UIKItManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D4942B29CA529200DC2321 /* UIKItManager.swift */; };
+		B7ECB48529DB7E710052C4C5 /* CardFlip in Frameworks */ = {isa = PBXBuildFile; productRef = B7ECB48429DB7E710052C4C5 /* CardFlip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7ECB48529DB7E710052C4C5 /* CardFlip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +313,9 @@
 			dependencies = (
 			);
 			name = Avalon;
+			packageProductDependencies = (
+				B7ECB48429DB7E710052C4C5 /* CardFlip */,
+			);
 			productName = Avalon;
 			productReference = B70AC0AD293E77B300B1D50C /* Avalon.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +344,9 @@
 				Base,
 			);
 			mainGroup = B70AC0A4293E77B300B1D50C;
+			packageReferences = (
+				B7ECB48329DB7E710052C4C5 /* XCRemoteSwiftPackageReference "CardFlip" */,
+			);
 			productRefGroup = B70AC0AE293E77B300B1D50C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -627,6 +635,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7ECB48329DB7E710052C4C5 /* XCRemoteSwiftPackageReference "CardFlip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iLomidze/CardFlip";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7ECB48429DB7E710052C4C5 /* CardFlip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7ECB48329DB7E710052C4C5 /* XCRemoteSwiftPackageReference "CardFlip" */;
+			productName = CardFlip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B70AC0A5293E77B300B1D50C /* Project object */;
 }

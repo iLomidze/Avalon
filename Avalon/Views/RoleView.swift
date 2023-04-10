@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CardFlip
 
 struct RoleView: View {
     var body: some View {
@@ -21,7 +22,11 @@ struct RoleView: View {
                     .font(.nunito(type: .bold, size: 20))
                     .foregroundColor(.fontColor)
                 
-//                PickerBall()
+                CardFlip(
+                    width: 250,
+                    height: 400,
+                    frontImage: Image("front"),
+                    backImage: Image("back"))
                     .padding(.top, 65)
                 
                 Spacer()
